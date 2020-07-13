@@ -1,14 +1,15 @@
-import { combineReducers, createStore } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
+ import { combineReducers, createStore } from 'redux';
+ import { composeWithDevTools } from 'redux-devtools-extension';
 
-import product from './products';
+ import product from './products';
+ import productsCart from './cart';
 
-let reducers = combineReducers({ product });
-
-
-const store = () => {
-    return createStore(reducers, composeWithDevTools());
-}
+ let reducers = combineReducers({ product, productsCart });
 
 
-export default store();
+ const store = () => {
+     return createStore(reducers, composeWithDevTools());
+ }
+
+
+ export default store();
