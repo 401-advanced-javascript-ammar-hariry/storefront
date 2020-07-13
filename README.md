@@ -7,7 +7,7 @@
 
 ## Links and Resources
 
-- [pull request](https://github.com/401-advanced-javascript-ammar-hariry/storefront/pull/1)
+- [pull request](https://github.com/401-advanced-javascript-ammar-hariry/storefront/pull/2)
 
 
 ### Packages and modules
@@ -17,6 +17,7 @@
 - ``redux``
 - ``react-redux``
 - ``redux-devtools-extension``
+- ``@material-ui/core/``
 
 
 
