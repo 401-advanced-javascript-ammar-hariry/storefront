@@ -7,7 +7,7 @@
 
 ## Links and Resources
 
-- [pull request](https://github.com/401-advanced-javascript-ammar-hariry/storefront/pull/2)
+- [pull request](https://github.com/401-advanced-javascript-ammar-hariry/storefront/pull/3)
 
 
 ### Packages and modules
