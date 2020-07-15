@@ -18,11 +18,13 @@
 - ``react-redux``
 - ``redux-devtools-extension``
 - ``@material-ui/core/``
-
+- ``superagent``
+- ``redux-thunk``
 
 
 
 #### How to initialize/run your application (where applicable)
+- ``cd my-app``
 - ``npm start``
 
 
