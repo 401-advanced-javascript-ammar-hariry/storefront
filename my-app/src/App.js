@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Category />
-      <Products />
       <SimpleCart />
       </header>
+      <Category />
+      <Products />
     </div>
   );
 }
