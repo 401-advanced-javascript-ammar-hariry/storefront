@@ -1,8 +1,10 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { addToCart } from '../store/cart.js'
+import React ,{useEffect} from 'react';
+import { connect , dispatch} from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import { Card ,CardActionArea,CardActions,CardContent,CardMedia,Button,Typography} from '@material-ui/core';
+
+import { addToCart } from '../store/cart.js';
+import AddToCart from './addtocart';
 
 const useStyles = makeStyles({
 
@@ -21,7 +23,9 @@ const useStyles = makeStyles({
 
 let arr = [];
 const Products = props => {
+
     const classes = useStyles();
+
     return (
           <>
         	<section className={classes.products}>
@@ -49,12 +53,14 @@ const Products = props => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button variant="contained" color="primary" onClick={()=>{arr.push(cat.name)
-        		 props.addToCart(arr)}}>Add To Cart1</Button>
+	    <AddToCart body={cat} />
               </CardActions>
             </Card>
         	)}
 	</ul>
+	<section>
+
+	</section>
           </section>
           </>
     );
@@ -63,6 +69,7 @@ const Products = props => {
 const mapStateToProps = state => ({
     products: state.product
 });
+
 
 const addCartPatch = { addToCart }
 

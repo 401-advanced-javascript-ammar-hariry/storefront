@@ -29,6 +29,6 @@ export const addToCart = (name) => ({
     status: false
 })
 export const remove = () => ({
-	type: 'Remove',
+    type: 'Remove',
 
-      })
+})

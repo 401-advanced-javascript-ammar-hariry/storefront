@@ -25,7 +25,6 @@ export default (state = initialState, action) => {
             let products = state.products.filter(product => product.category === payload);
             let activeCategory = state.categories.filter(cat => cat.name === payload)[0]['displayName'];
             return { categories: state.categories, products, activeCategory };
-
         default:
             return state
     }
